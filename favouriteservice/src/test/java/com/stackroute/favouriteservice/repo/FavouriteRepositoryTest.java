@@ -17,7 +17,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@ContextConfiguration
+
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
 @Transactional
@@ -36,12 +36,12 @@ public class FavouriteRepositoryTest {
 	
 	@Test
 	public void testSaveFood() throws Exception {
-		repo.save(new Favourite("1234","NEUMAN'S, CARROT PINEAPPLE BREAD",45001861,"Branded Food Products Database"));
-		final Favourite favourite = repo.getOne(45001861);
-		assertThat(favourite.getNdbno()).isEqualTo(45001861);
+		repo.save(new Favourite("2","NEUMAN'S, CARROT PINEAPPLE BREAD",45001861,"Branded Food Products Database"));
+		final Favourite favourite = repo.getOne(2);
+		assertThat(favourite.getNdbno()).isEqualTo(2);
 	}
 
-	@Test
+@Test
 	public void testDeleteFoodById() throws Exception {
 		repo.save(new Favourite("1234","NEUMAN'S, CARROT PINEAPPLE BREAD",45001861,"Branded Food Products Database"));
 		repo.deleteById(1);
@@ -55,6 +55,7 @@ public class FavouriteRepositoryTest {
 		List<Favourite> favourites = repo.findByUserId("1234");
 		assertThat(favourites.size()).isGreaterThan(1);
 	}
+
 	
 }
 */
