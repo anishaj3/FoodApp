@@ -10,7 +10,7 @@ variables:
   MYSQL_DATABASE: fooddb
   MYSQL_CI_URL: jdbc:mysql://mysql/fooddb
   MYSQL_USER: root
-  MYSQL_ROOT_PASSWORD: root
+  MYSQL_ROOT_PASSWORD: password
 cache:
   paths:
     - .m2/repository/
