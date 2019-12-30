@@ -1,4 +1,4 @@
-# Nutritionist - A Case Study
+# Nutritionist - A  Case Study
 ## Problem Statement
 Build a system to search for a specific food to find it’s nutrition details, show list of
 matching food, view the nutrition content for a selected food and bookmark favourite
