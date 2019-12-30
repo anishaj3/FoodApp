@@ -1,0 +1,16 @@
+server:
+  port: 8089
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/fooddb?verifyServerCertificate=false&useSSL=false&requireSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: password
+  jpa:
+    show-sql: true
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+      ddl-auto: update
+      show-sql: true
+      hbm2ddl:
+        jdbc_metadata_extraction_strategy: individually
+
