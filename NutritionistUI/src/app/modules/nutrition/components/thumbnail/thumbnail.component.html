@@ -1,0 +1,12 @@
+<mat-card class="food-thumbnail">
+    <mat-card-header class="food-header">
+        <mat-card-title class="food-title">{{item?.foodGroup}}</mat-card-title>
+        <mat-card-title>{{item?.name}}</mat-card-title>
+        <mat-card-title>{{item?.ndbno}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions class="food-actions">
+        <button *ngIf="!watchlist" mat-button color="primary" (click)="addToFavourites()">Add to favourite</button>
+        <button *ngIf="!watchlist"mat-button color="primary"[routerLink]="['food-details',item.ndbno]">Details</button>
+        <button *ngIf="watchlist" mat-button color="primary" (click)="deleteFromFavourites()">Delete</button>
+    </mat-card-actions>
+</mat-card>
