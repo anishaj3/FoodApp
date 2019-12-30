@@ -1,8 +1,5 @@
 package com.stackroute.favouriteservice.exception;
-/**
- * @author Navya Surendran
- *
- */
+
 public class FoodNotFoundException extends Exception {
 
 	private String message;

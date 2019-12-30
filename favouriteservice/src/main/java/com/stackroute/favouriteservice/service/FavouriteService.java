@@ -6,10 +6,6 @@ import com.stackroute.favouriteservice.exception.FoodNotFoundException;
 
 import java.util.List;
 
-/**
- * @author Navya Surendran
- *
- */
 public interface FavouriteService {
 	
 	boolean saveFood(Favourite favourite) throws FoodAlreadyExistsException;
