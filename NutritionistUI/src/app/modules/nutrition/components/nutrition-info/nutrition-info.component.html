@@ -1,0 +1,12 @@
+
+<mat-card *ngFor="let nutrient of foodNutrients" class="food-thumbnail">
+    <mat-card-header class="food-header">       
+        <mat-card-title >{{nutrient.name}}</mat-card-title>
+        <mat-card-title>{{nutrient.nutrientId}}</mat-card-title>
+        <mat-card-title>{{nutrient.group}}</mat-card-title>
+        <mat-card-title>{{nutrient.unit}}</mat-card-title>
+        <mat-card-title>{{nutrient.value}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions class="food-actions">
+    </mat-card-actions>
+</mat-card>

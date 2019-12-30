@@ -1,0 +1,7 @@
+<h4>{{header}}</h4>
+<div class="food-container">
+    <food-thumbnail *ngFor="let item of items" [item]="item" [watchlist]="watchlist"
+    (addFood)="addToFavourites($event)"
+    (deleteFood)="deleteFromFavourites($event)"
+    (showDetails)="itemButtonClicked($event)"></food-thumbnail>
+</div>
