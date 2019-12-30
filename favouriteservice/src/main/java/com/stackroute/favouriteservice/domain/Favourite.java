@@ -2,10 +2,6 @@ package com.stackroute.favouriteservice.domain;
 
 import javax.persistence.*;
 
-/**
- * @author Navya Surendran
- *
- */
 @Entity
 @Table(name="fooddb")
 public class Favourite {
