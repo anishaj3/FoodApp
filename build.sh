@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bashp
 
 cd userservice
 source ./env-variables.sh
