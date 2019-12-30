@@ -12,10 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * @author Navya Surendran
- *
- */
+
 public class JwtFilter extends GenericFilterBean {
 
 	/* (non-Javadoc)
