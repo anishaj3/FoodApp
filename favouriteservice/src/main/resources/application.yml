@@ -2,8 +2,8 @@ server:
   port: 8082
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/fooddb
+    driver-class-name: com.mysql.jc.jdbc.Driver
+    url: jdbc:mysql://192.168.43.14:3306/fooddb
     username: root
     password: root
   jpa:
