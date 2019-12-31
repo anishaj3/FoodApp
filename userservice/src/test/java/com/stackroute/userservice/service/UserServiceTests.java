@@ -9,6 +9,7 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.test.context.ContextConfiguration;
 
 import java.util.Date;
 import java.util.Optional;
@@ -16,6 +17,7 @@ import java.util.Optional;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
+@ContextConfiguration
 public class UserServiceTests {
 
     @Mock
