@@ -9,7 +9,7 @@ services:
       MYSQL_ROOT_PASSWORD: app_root
       MYSQL_DATABASE: fooddb
       MYSQL_USER: root
-      MYSQL_PASSWORD: root123
+      MYSQL_PASSWORD: root
 
   user-app:
     image: user-app
