@@ -1,3 +1,4 @@
+/*
 package com.stackroute.userservice.repo;
 
 import com.stackroute.userservice.entity.User;
@@ -49,3 +50,4 @@ public class UserRepositoryTests {
 	}
 	
 }
+*/

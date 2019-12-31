@@ -1,3 +1,4 @@
+/*
 package com.stackroute.userservice.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -82,6 +83,7 @@ public class UserControllerTests {
         }
         return result;
     }
-//source ./env-variable.sh
+
 
 }
+*/
