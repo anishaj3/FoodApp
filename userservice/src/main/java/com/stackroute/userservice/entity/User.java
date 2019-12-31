@@ -24,10 +24,7 @@ public class User {
 	
 	@Column(name = "password")
 	private String password;
-	
-	@CreationTimestamp
-	@Column(name = "created_at")
-	private Date created;
+
 	
 	public User() {}
 
@@ -37,7 +34,6 @@ public class User {
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.password = password;
-		this.created = created;
 	}
 
 	public String getUserId() {
@@ -72,12 +68,5 @@ public class User {
 		this.password = password;
 	}
 
-	public Date getCreated() {
-		return created;
-	}
-
-	public void setCreated(Date created) {
-		this.created = created;
-	}
 
 }
