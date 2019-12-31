@@ -2,10 +2,7 @@ package com.stackroute.userservice.entity;
 
 import org.hibernate.annotations.CreationTimestamp;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -13,22 +10,22 @@ import java.util.Date;
 public class User {
 	
 	@Id
-	@Column(name = "user_id")
+	@Column(name = "user_id",length = 64)
 	private String userId;
 	
-	@Column(name = "firstname")
+	@Column(name = "firstname",length = 64)
 	private String firstname;
 	
-	@Column(name = "lastname")
+	@Column(name = "lastname",length = 64)
 	private String lastname;
 	
-	@Column(name = "password")
+	@Column(name = "password",length = 64)
 	private String password;
 
 	
 	public User() {}
 
-	public User(String userId, String firstname, String lastname, String password, Date created) {
+	public User(String userId, String firstname, String lastname, String password) {
 		super();
 		this.userId = userId;
 		this.firstname = firstname;

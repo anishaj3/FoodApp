@@ -32,7 +32,7 @@ public class UserRepositoryTests {
 	
 	@Before
 	public void setup() throws Exception {
-		user = new User("jon", "John", "Doe", "password", new Date());
+		user = new User("jon", "John", "Doe", "password");
 	}
 
 	@Test

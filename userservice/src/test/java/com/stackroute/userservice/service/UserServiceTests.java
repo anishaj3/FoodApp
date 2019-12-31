@@ -1,4 +1,3 @@
-/*
 package com.stackroute.userservice.service;
 
 import com.stackroute.userservice.entity.User;
@@ -34,7 +33,7 @@ public class UserServiceTests {
     @Before
     public void setup() {
         MockitoAnnotations.initMocks(this);
-        user = new User("jon", "John", "Doe", "password", new Date());
+        user = new User("jon", "John", "Doe", "password");
         options = Optional.of(user);
     }
 
@@ -76,4 +75,3 @@ public class UserServiceTests {
     }
 
 }
-*/

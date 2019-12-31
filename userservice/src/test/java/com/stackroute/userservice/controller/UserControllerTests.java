@@ -1,4 +1,3 @@
-/*
 package com.stackroute.userservice.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -44,7 +43,7 @@ public class UserControllerTests {
     @Before
     public void setup() {
         MockitoAnnotations.initMocks(this);
-        user = new User("jon", "John", "Doe", "password", new Date());
+        user = new User("jon", "anisha", "anisha", "password");
     }
 
 
@@ -86,4 +85,3 @@ public class UserControllerTests {
 
 
 }
-*/
