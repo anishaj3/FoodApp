@@ -1,10 +1,8 @@
-# Nutritionist - A  Case Study
-## Problem Statement
-Build a system to search for a specific food to find it’s nutrition details, show list of
+Food app is used to search for a specific food to find it’s nutrition details, show list of
 matching food, view the nutrition content for a selected food and bookmark favourite
 food for later reference.
-## Requirements
-- ​ The application needs to search for food and find nutrition data for a selected food by
+## API
+- ​ The application search for food and find nutrition data for a selected food by
 registering with the following link and get API key required to call the APIs.
 ● https://ndb.nal.usda.gov/ndb/api/doc
 Reference APIs:
@@ -19,11 +17,11 @@ item ​ and ​ bookmark​ ​ favourite food​ for later reference.
 items​ for user.
 ## Modules
 ### UserService - should be able to manage user accounts.
-### UI (User interface) - should be able to
+### UI (User interface) - able to
 1. Search for a specific food item and show list of matching foods
 2. View nutrition details of a selected food
 3. Add a food to favourite list
-4. should be able to see favourite food items
+4. Able to see favourite food items
 5. UI should be responsive which can run smoothly on various devices
 ### FavouriteService - should be able to store all the favourite foods for a user
 ## Tech Stack
@@ -51,7 +49,7 @@ MySQL
 - Unit Testing
 - Write CI Configuration
 - Dockerize the application
-- Write docker-compose file to build both frontend and backend application
+- docker-compose file to build both frontend and backend application
 ### Building the Favourite Service
 - Building a server in Spring Boot to facilitate CRUD operation over favourite food items stored
 in MySQL
@@ -60,4 +58,8 @@ in MySQL
 - Write CI Configuration
 - Dockerize the application
 - Update the docker-compose
-### Demonstrate the entire application
+### Start mysql server create food db
+### mvn clean install for favourite and user service
+### mvn spring-boot:run to run the favourite and user service
+### yarn install for nutritionist UI
+### ng serve to start the nutritionist UIgit remote set-url 
